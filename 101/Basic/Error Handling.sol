@@ -3,12 +3,12 @@ pragma solidity =0.8.17;
 
 contract ErrorHandling {
 
-    // require -> check for valid condition
-    //         -> check inputs
-    //         -> revert
-    // assert  -> test for internal error
-    //         -> check invariant( condition that is always true at a particular point in code)
-       
+    // require -> - check for valid condition
+    //            - check inputs
+    //            - revert
+    // assert  -> - test for internal error
+    //            - check invariant( condition that is always true at a particular point in code)
+    //            - To avoid conditions which should never, ever be possible
     mapping(address => uint256) balance;
     address owner;
 
