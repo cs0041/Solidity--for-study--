@@ -15,6 +15,7 @@ pragma solidity =0.8.17;
 
 //***msg.sender.call{value: toTransfer}("")***  
 // Good - modern and  mostly used now
+// Bad  - can use infinite gas it meant can re-entrancy attack 
 
 contract Reentrancy  {  
     mapping(address  => uint256) balance;
